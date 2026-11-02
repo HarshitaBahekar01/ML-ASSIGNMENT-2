@@ -35,3 +35,45 @@ https://github.com/HarshitaBahekar01/ML-ASSIGNMENT-2
 | **Naive Bayes** | Obtains 94.23% accuracy and 95.24% F1-score, providing reliable probabilistic predictions despite independence assumptions. |
 | **Support Vector Machine** | Achieves 98.08% accuracy and the highest AUC score of 0.9973, showing exceptional margin separation. |
 | **Overall, Winner for your dataset?** | **Decision Tree Classifier**, due to achieving highest accuracy (99.04%), perfect precision (1.0000), and top MCC (0.9800). |
+
+## How to Run the Project
+
+### **Step 1: Clone the Repository**
+Open your terminal and clone the project:
+```bash
+git clone <your-repository-url>
+cd ml-assignment-2
+```
+
+### **Step 2: Create and Activate a Virtual Environment (`venv`)**
+
+* **On Windows (Command Prompt / PowerShell):**
+  ```cmd
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+* **On macOS / Linux:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+### **Step 3: Install Dependencies**
+With the virtual environment activated, install all required packages:
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### **Step 4: Train Models & Generate Artifacts**
+Run the training script to preprocess the data, train all 5 classification models, and save serialized model artifacts into the `model/` directory:
+```bash
+python train_models.py
+```
+
+### **Step 5: Launch the Streamlit Application**
+Start the interactive Streamlit dashboard locally:
+```bash
+streamlit run app.py
+```
